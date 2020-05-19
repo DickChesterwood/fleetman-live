@@ -1,9 +1,13 @@
-**Note: updated for Istio 1.5 on 3 April 2020. The master branch is now the 1.5 version.**
+A port of the "Fleetman" project from the Istio and Kubernetes training course. The intention of this project is to integrate with a real "live" security tracking system and to potentially move it towards a commercial release.
 
-Now available at VirtualPairProgrammers.com and Udemy!
+Note: This is not aligned with any particular training course - if you're looking for the repo for a training course (Istio, Kubernetes) then this probably isn't it! Look for k8s-fleetman or istio-fleetman!
 
-The link here has a coupon code which is valid until 9th November 2019: https://www.udemy.com/course/istio-hands-on-for-kubernetes/?couponCode=6082122CC64DA306A8AB
+See the Issue tracker for work in progress, but the starting point is:
 
-Aim: make Istio understandable - it's not that hard. I don't mention TCP/IP stack levels once. Or the CNCF.
-
-There will be further material added later [I'm working on this, but in slower time!]
+[] Initial support for the Rewire Security 104 Pro Tracker https://www.amazon.co.uk/gp/product/B00WAE5UMM
+[] CRUD Support for Vehicles / Devices
+[] Support full authentication and authorization, maybe using Auth0, maybe not.
+[] Integrate a commercial API Gateway such as Kong
+[] New Alerting System which will initially support a "Zone Out" alert. SMS alerts.
+[] Remove the Redundant Position Simulator
+[] Integrate a full Publish/Subscribe system instead of a Queue
